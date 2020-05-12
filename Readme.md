@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Nataliya Kiriyakova](https://up.htmlacademy.ru/htmlcss/28/user/634783).
-* Наставник: `Неизвестно`.
+* Наставник: [Геннадий Максимов](https://htmlacademy.ru/profile/gennadiy).
 
 ---
 
