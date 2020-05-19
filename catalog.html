@@ -98,31 +98,30 @@
       <div>
         <p>Фильтр:</p>
       </div>
-      <form>
+      <form method="get" action="#" name="filter" oninput="rangechoise.value=range.value">
         <fieldset>
           <legend>Цена:</legend>
-          <div>
             <label>
-              <input type="range" min="1" max="10">
+              <input type="range" name="range" min="0" max="30000" step="500">
             </label>
           </div>
-          <div>
+            <output name="rangechoise">0 - 30000</output>
             <p>0</p>
-						<span>—</span>
-						<p>30000</p>
-          </div>
-        </fieldset>     
+            <span>-</span>
+            <p>30000</p>
+          </div> 
+        </fieldset>>   
           <!-- добавила разметку красных блоков -->
         <fieldset>
           <legend>Производители:</legend>
             <label>
-              <input type="checkbox" name="Bosch"> Bosch
+              <input type="checkbox" name="Bosch" checked> Bosch
             </label>
             <label>
               <input type="checkbox" name="Интерскол"> Интерскол
             </label>
             <label>
-              <input type="checkbox" name="Makita"> Makita
+              <input type="checkbox" name="Makita" checked> Makita
             </label>
             <label>
               <input type="checkbox" name="DeWalt"> DeWalt
@@ -134,10 +133,10 @@
         <fieldset>
           <legend>Питание:</legend>
             <label>
-              <input type="radio" name="Аккумуляторные"> Аккумуляторные
+              <input type="radio" name="radio" value="accumulator" checked> Аккумуляторные
             </label>
             <label>
-              <input type="radio" name="Сетевые"> Сетевые
+              <input type="radio" name="radio" value="network"> Сетевые
             </label>
         </fieldset>    
         <button type="submit">Показать</button>
