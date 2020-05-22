@@ -21,11 +21,11 @@
         <div>
           <a href="#nowhere">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path fill="#ffffff" d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/></svg>
-            <p>Закладки:</p>
+            <span>Закладки:</span>
           </a>
           <a href="#nowhere">
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
-            <p>Корзина:</p>
+            <span>Корзина:</span>
           </a>
           <a href="#nowhere">Оформить заказ</a>  
         </div>
@@ -62,7 +62,7 @@
       <div>
         <nav>
           <ul>
-            <li><a href="index.html">Главная</a></li>
+            <li><a>Главная</a></li>
             <li><a href="#nowhere">Компания</a></li>
             <li><a href="catalog.html">Каталог</a></li>
             <li><a href="#nowhere">Новости</a></li>
@@ -103,36 +103,27 @@
             <!-- должен быть slider-->
           <div>
             <div>
-              <input id="slider_input1" type="radio" name="slider-page" checked>
-              <input id="slider_input2" type="radio" name="slider-page">
-  
-              <ul>
-                <li>
-                  <div>
-                    <h3>Дрели</h3>
-                    <p>Соседям на радость!</p>
-                  </div>
-                </li>
-                <li>
-                  <div>
-                    <h3>Перфораторы</h3>
-                    <p>Настоящие мужские игрушки</p>  
-                  </div>
-                </li>
-              </ul>
-  
               <div>
-                <label for="slider_input1"></label>
-                <label for="slider_input2"></label>
+                <h3>Дрели</h3>
+                <p>Соседям на радость!</p>
               </div>
+                
               <div>
-                <img src="img/slider1.jpg" width="620" height="266" alt="дрели">
-                <img src="img/slider2.jpg" width="620" height="266" alt="перфораторы">
+                <h3>Перфораторы</h3>
+                <p>Настоящие мужские игрушки</p>  
               </div>
   
               <button type="button"></button>
               <button type="button"></button>
               <a href="catalog.html">Открыть каталог</a>
+
+              <label>
+                <input id="slider_input1" type="radio" name="slider-page" checked>
+              </label>
+              <label>
+                <input id="slider_input2" type="radio" name="slider-page">
+              </label>
+
             </div>							 
           </div>	
           						
@@ -175,8 +166,8 @@
                   <p>25500 Р.</p>
               </div>
               <div>
-                <button type="button">Купить</button>
-                <button type="button">В закладки</button>
+                <a href="#nowhere">Купить</a>
+                <a href="#nowhere">В закладки</a>
               </div>
             </article>
           </li>
@@ -193,8 +184,8 @@
                   <p>15500 Р.</p>
               </div>
               <div>
-                <button type="button">Купить</button>
-                <button type="button">В закладки</button>
+                <a href="#nowhere">Купить</a>
+                <a href="#nowhere">В закладки</a>
               </div>
             </article>
           </li>
@@ -211,8 +202,8 @@
                   <p>25500 Р.</p>
               </div>
               <div>
-                <button type="button">Купить</button>
-                <button type="button">В закладки</button>
+                <a href="#nowhere">Купить</a>
+                <a href="#nowhere">В закладки</a>
               </div>
             </article>
           </li>
@@ -228,8 +219,8 @@
                   <p>12500 Р.</p>
               </div>
               <div>
-                <button type="button">Купить</button>
-                <button type="button">В закладки</button>
+                <a href="#nowhere">Купить</a>
+                <a href="#nowhere">В закладки</a>
               </div>
             </article>
           </li>
@@ -408,5 +399,52 @@
         </div>
       </div>
     </footer>
+
+    <div>
+      <section >
+        <h2>Полноразмерная карта</h2>
+        <button type="button" aria-label="Закрыть полноразмерную карту"></button>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4d856e93dd55dbb3d9c2c927b9d71ce0b08c25766e1c8177388b5b4cdb6cc9b5&amp;source=constructor" width="940" height="447"></iframe>
+      </section>
+    </div>
+  
+    <div>
+      <section >
+        <h2>Написать нам</h2>
+        <button type="button" aria-label="Закрыть форму обратной связи"></button>
+  
+        <form method="post" action="#" name="write-us" autocomplete="off">
+          <label>Ваше имя:
+            <input type="text" name="user-name" placeholder="Имя Фамилия" required>
+          </label>
+  
+          <label>Ваш e-mail:
+            <input type="email" name="user-email" placeholder="email@example.com" required>
+          </label>
+  
+          <label>Текст письма:<br>
+            <textarea name="user-text" placeholder="В свободной форме" required></textarea>
+          </label>
+        </form>
+        <div >
+          <button type="submit" aria-label="Отправить письмо">Отправить</button>
+        </div>
+      </section>
+    </div>
+  
+    <div>
+      <section>
+        <button type="button" aria-label="Закрыть окно оповещения о добавление товара в корзину"></button>
+        <div>
+          <img src="img/icon-mark.svg" width="66" height="66" alt="Товар добавлен в карзину">
+          <h2>Товар добавлен в корзину!</h2>
+        </div>
+        <div>
+          <a href="#nowhere">Оформить заказ</a>
+          <button type="button">Продолжить покупки</button>
+        </div>
+      </section>
+    </div>
+
   </body>
 </html>
