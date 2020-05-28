@@ -3,50 +3,54 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header>
-  <div>
-    <a>
-      <img src="img/logo-technomart.svg" width="108" height="18" alt="Техномарт">
-    </a>
-    <form method="get" action="https://echo.htmlacademy.ru/" name="search" autocomplete="off" aria-label="форма поиска">
-      <label>
-        <input type="search" name="search" placeholder="Поиск:">
-        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
-          <path fill="#ffffff"
-                d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 
-                0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 
-                2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
-        </svg>
-      </label>
-    </form>
-    <div>
-      <a href="#nowhere">
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
-          <path fill="#ffffff"
-                d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 
-                0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/>
-        </svg>
-        <span>Закладки:</span>
+<header class="main-header">
+  <div class="header-content-wrapper">
+    <div class="header-content-top">
+      <a class="header-logo" aria-label="Логотип техномарт">
+        <img src="img/logo-technomart.svg" width="108" height="18" alt="Техномарт">
       </a>
-      <a href="#nowhere">
-        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
-          <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/>
-          <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
-          <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
-        </svg>
-        <span>Корзина:</span>
-      </a>
-      <a href="#nowhere">Оформить заказ</a>
+      <form class="header-search" method="get" action="https://echo.htmlacademy.ru/" name="search" autocomplete="off" aria-label="форма поиска">
+        <label>
+          <input class="header-search-field" type="search" name="search" placeholder="Поиск:">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
+          </svg>
+        </label>
+      </form>
+      <div class="header-content-right">
+        <a class="header-btn" href="#nowhere" aria-label="Перейти к закладкам">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
+            <path fill="#ffffff"
+                  d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 
+                  0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/>
+          </svg>
+          <span class="option">Закладки:</span>
+        </a>
+        <a class="header-btn" href="#nowhere" aria-label="Перейти к корзине">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+            <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/>
+            <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
+            <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+          </svg>
+          <span class="option">Корзина:</span>
+        </a>
+        <a class="header-btn basket-btn" href="#nowhere" aria-label="Перейти к корзине">
+          <span class="option">Оформить заказ</span>
+        </a>
+      </div>
     </div>
   </div>
 
-  <div>
+  <div class="header-content-middle">
     <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-    <div>
-      <a href="tel:+78125550555">
+    <div class="phone-btn">
+      <a class="phone-number" href="tel:+78125550555" aria-label="Позвонить по тел +7 (812) 555-05-55">
         <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
           <path fill="#B7BFC8" d="M15.572 18.985h-.941c-4.129-.488-7.157-2.408-9.359-4.864C3.062 11.66 1.318 8.492.978
               4.228V3.084c.078-.774.459-1.304.898-1.757C2.425.766 3.25.044 4.002.019c.554-.018 1.5.38 1.879.899.329.446.504
@@ -56,13 +60,13 @@
         </svg>
         +7 (812) 555-05-55
       </a>
-      <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
     </div>
 
-    <div>
-      <ul>
+    <div class="header-login">
+      <ul class="enter-login">
         <li>
-          <a href="#nowhere">
+          <a class="login-btn" href="#nowhere" aria-label="Вход на сайт">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
               <path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/>
               <path fill="#c5c5c5"
@@ -73,44 +77,43 @@
           </a>
         </li>
         <li>
-          <a href="#nowhere">Регистрация</a>
+          <a class="login-btn" href="#nowhere" aria-label="Зарегистрироваться">Регистрация</a>
         </li>
       </ul>
-
     </div>
   </div>
 
-  <nav>
-    <ul>
+  <nav class="header-content-bottom">
+    <ul class="header-navigation">
       <li>
-        <a>Главная</a>
+        <a class="nav-btn">Главная</a>
       </li>
       <li>
-        <a href="#nowhere">Компания</a>
+        <a class="nav-btn" href="#nowhere" aria-label="Перейти к информации о компании">Компания</a>
       </li>
       <li>
-        <a href="catalog.html">Каталог</a>
+        <a class="nav-btn" href="catalog.html" aria-label="Перейти к обзору каталога">Каталог</a>
       </li>
       <li>
-        <a href="#nowhere">Новости</a>
+        <a class="nav-btn" href="#nowhere" aria-label="Перейти к обзору новостей">Новости</a>
       </li>
       <li>
-        <a href="#nowhere">Спецпредложения</a>
+        <a class="nav-btn" href="#nowhere" aria-label="Перейти к обзору спецпредложений">Спецпредложения</a>
       </li>
       <li>
-        <a href="#nowhere">Доставка</a>
+        <a class="nav-btn" href="#nowhere" aria-label="Перейти в раздел доставка">Доставка</a>
       </li>
       <li>
-        <a href="#nowhere">Контакты</a>
+        <a class="nav-btn" href="#nowhere" aria-label="Посмотреть контакты">Контакты</a>
       </li>
     </ul>
   </nav>
 </header>
 
-<main>
-  <section>
+<main class="shop-content">
+  <section class="promo-slider">
     <h2 class="visually-hidden">Промо</h2>
-    <div>
+    <div class="promo-card">
       <div>
         <h3>Материалы</h3>
         <a href="#nowhere">На любой вкус</a>
@@ -119,7 +122,7 @@
         <img src="img/icon-1.svg" width="44" height="65" alt="Материалы">
       </div>
     </div>
-    <div>
+    <div class="promo-card">
       <div>
         <h3>Инструмент</h3>
         <a href="#nowhere">На все случаи</a>
@@ -128,7 +131,7 @@
         <img src="img/icon-2.svg" width="75" height="61" alt="Инструмент">
       </div>
     </div>
-    <div>
+    <div class="promo-card">
       <div>
         <h3>Техника</h3>
         <a href="#nowhere">Для стройки</a>
@@ -137,10 +140,10 @@
         <img src="img/icon-3.svg" width="78" height="62" alt="Техника">
       </div>
     </div>
-    <div>
+    <div class="promo-card-slider">
       <div>
-        <h3></h3>
-        <p></p>
+        <h3>Перфораторы</h3>
+        <p>Настоящие мужские игрушки</p>
       </div>
       <button type="button" aria-label="Предыдущий">
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40">
@@ -152,9 +155,26 @@
           <path fill="#FFF" d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z"/>
         </svg>
       </button>
-      <a href="#nowhere"></a>
+      <a href="#nowhere">Открыть каталог</a>
     </div>
-    <div>
+    <div class="promo-card-slider visually-hidden">
+      <div>
+        <h3>Дрели</h3>
+        <p>Соседям на радость</p>
+      </div>
+      <button type="button" aria-label="Предыдущий">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40">
+          <path fill="#FFF" d="M19.83-.035l2.089 2.099L4.13 19.947l17.847 17.939-2.09 2.099L-.048 19.947z"/>
+        </svg>
+      </button>
+      <button type="button" aria-label="Следующий">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40">
+          <path fill="#FFF" d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z"/>
+        </svg>
+      </button>
+      <a href="#nowhere">Открыть каталог</a>
+    </div>
+    <div class="promo-card">
       <div>
         <h3>Скидки 50%</h3>
         <a href="#nowhere">На 350 товаров</a>
@@ -163,7 +183,7 @@
         <img src="img/icon-4.svg" width="59" height="72" alt="Скидки">
       </div>
     </div>
-    <div>
+    <div class="promo-card">
       <div>
         <h3>Доставка</h3>
         <a href="#nowhere">Бесплатно</a>
@@ -174,8 +194,8 @@
     </div>
   </section>
 
-  <section>
-    <div>
+  <section class="shop-goods">
+    <div class="head-block">
       <h2>Популярные товары</h2>
       <a href="#nowhere">Все популярные товары</a>
     </div>
@@ -262,8 +282,8 @@
     </ul>
   </section>
 
-  <section>
-    <div>
+  <section class="shop-firms">
+    <div class="head-block">
       <h2>Популярные производители</h2>
       <a href="#nowhere">Все производители</a>
     </div>
@@ -309,18 +329,18 @@
         </a>
       </li>
     </ul>
-  </section>
-
-  <section>
-    <div>
+  </section> 
+  
+  <section class="main-service">
+    <div class="service-info">
       <h2>Сервисы</h2>
       <p>
         Хороший интернет-магазин отличается от плохого не только ценами!<br>
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
       </p>
     </div>
-    <div>
-      <div>
+    <div class="service-menu">
+      <div >
         <ul>
           <li>
             <button type="button">Доставка</button>
@@ -368,114 +388,116 @@
     </div>
   </section>
 
-  <div>
-    <section>
-      <h2>Компания «Техномарт»</h2>
-      <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и <br>
+  <div class="main-company-info">
+    <section class="company-info">
+      <h2 class="title">Компания «Техномарт»</h2>
+      <p class="promo-description">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и <br>
         cтроительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-      <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+      <p class="promo-description">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
         Техномарт работает со многими транспортными компаниями: </p>
-      <ul>
+      <ul class="delivery">
         <li>
-          <a href="#nowhere">
+          <a class="delivery-info" href="#nowhere">
             Деловые линии</a>
         </li>
         <li>
-          <a href="#nowhere">Автотрейдинг</a>
+          <a class="delivery-info" href="#nowhere">Автотрейдинг</a>
         </li>
         <li>
-          <a href="#nowhere">ЖелДорЭкспедиция</a>
+          <a class="delivery-info" href="#nowhere">ЖелДорЭкспедиция</a>
         </li>
       </ul>
-      <a href="#nowhere">Подробнее о компании</a>
+      <a class="info-btn" href="#nowhere">Подробнее о компании</a>
     </section>
-    <section>
-      <h2>Контакты</h2>
-      <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+    <section class="company-location">
+      <h2 class="title">Контакты</h2>
+      <p class="promo-description">Вы можете забрать товар сами, заехав в наш офис:</p>
       <div>
         <img src="img/map.png" width="300" height="158" alt="Карта">
       </div>
-      <a href="#nowhere">Заблудились? Напишите нам!</a>
+      <a class="info-btn" href="#nowhere">Заблудились? Напишите нам!</a>
     </section>
   </div>
 
 </main>
 
-<footer>
-  <div>
-    <div>
-      <a>
-        <img src="img/logo-technomart.svg" width="137" height="22" alt="Техномарт">
-      </a>
-      <ul>
+<footer class="main-footer">
+  <div class="footer-menu">
+    <a class="footer-logo">
+      <img src="img/logo-technomart.svg" width="137" height="22" alt="Техномарт">
+    </a>
+    <ul class="footer-nav">
+      <li>
+        <a class="page-nav" href="index.html">Компания</a>
+      </li>
+      <li>
+        <a class="page-nav" href="#nowhere">Новости</a>
+      </li>
+      <li>
+        <a class="page-nav" href="catalog.html">Каталог</a>
+      </li>
+      <li>
+        <a class="page-nav" href="#nowhere">Доставка</a>
+      </li>
+      <li>
+        <a class="page-nav" href="#nowhere">Контакты</a>
+      </li>
+    </ul>
+  </div>
+  <div class="footer-catalog">
+    <p class="adress-info">
+      <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+      <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+    </p>
+    <ul class="footer-list">
+      <li>
+        <a class="list-nav" href="#nowhere">Материалы</a>
+      </li>
+      <li>
+        <a class="list-nav" href="#nowhere">Техника</a>
+      </li>
+      <li>
+        <a class="list-nav" href="#nowhere">Инструмент</a>
+      </li>
+      <li>
+        <a class="list-nav" href="#nowhere">Спецпредложения</a>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="footer-bottom-wrapper">
+    <div class="footer-bottom">
+      <p>2010–2017 Компания «Техномарт» Все права защищены</p>
+      <ul class="footer-icon">
         <li>
-          <a href="index.html">Компания</a>
+          <a href="#nowhere">
+            <img src="img/icon-vk.svg" width="26" height="15" alt="Перейти по ссылке Вконтакте">
+          </a>
         </li>
         <li>
-          <a href="#nowhere">Новости</a>
+          <a href="#nowhere">
+            <img src="img/icon-fb.svg" width="12" height="22" alt="Перейти по ссылке Фейсбук">
+          </a>
         </li>
         <li>
-          <a href="catalog.html">Каталог</a>
-        </li>
-        <li>
-          <a href="#nowhere">Доставка</a>
-        </li>
-        <li>
-          <a href="#nowhere">Контакты</a>
+          <a href="#nowhere">
+            <img src="img/icon-insta.svg" width="21" height="21" alt="Перейти по ссылке инстаграмм">
+          </a>
         </li>
       </ul>
-    </div>
-    <div>
-      <p>
-        <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-      </p>
-      <ul>
+      <ul class="footer-link">
         <li>
-          <a href="#nowhere">Материалы</a>
+          <p>Обратная связь:</p>
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
         <li>
-          <a href="#nowhere">Техника</a>
-        </li>
-        <li>
-          <a href="#nowhere">Инструмент</a>
-        </li>
-        <li>
-          <a href="#nowhere">Спецпредложения</a>
+          <p>Разработано —</p>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </li>
       </ul>
     </div>
   </div>
-  <div>
-    <p>2010–2017 Компания «Техномарт» Все права защищены</p>
-    <ul>
-      <li>
-        <a href="#nowhere">
-          <img src="img/icon-vk.svg" width="26" height="15" alt="Перейти по ссылке Вконтакте">
-        </a>
-      </li>
-      <li>
-        <a href="#nowhere">
-          <img src="img/icon-fb.svg" width="12" height="22" alt="Перейти по ссылке Фейсбук">
-        </a>
-      </li>
-      <li>
-        <a href="#nowhere">
-          <img src="img/icon-insta.svg" width="21" height="21" alt="Перейти по ссылке инстаграмм">
-        </a>
-      </li>
-    </ul>
-    <ul>
-      <li>
-        <p>Обратная связь:</p>
-        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-      </li>
-      <li>
-        <p>Разработано —</p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-      </li>
-    </ul>
-  </div>
+    
 </footer>
 
 <section class="visually-hidden">
