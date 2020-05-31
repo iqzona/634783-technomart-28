@@ -423,20 +423,9 @@ svg{
   list-style: none;
 }
 
-
-
 /* Main catalog.html*/
-.shop-catalog{
-  width: 100%;
-}
-.drill-description{
-  background-color: var(--basic-light-blue);
-}
-.section-catalog-name{
-  background-color: var(--section-catalog-name);
-}
-.filter-name{
-  background-color: var(--filter-name);
+.main-block-catalog{
+  width: var(--content-width);
 }
 
 /* Footer */
