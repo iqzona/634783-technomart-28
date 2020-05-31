@@ -10,47 +10,47 @@
 </head>
 <body>
 
-<header class="main-header">
-  <div class="header-content-wrapper">
-    <div class="header-content-top">
-      <a class="header-logo" aria-label="Логотип техномарт">
+<header class="header-block">
+  <div class="header-top-wrapper">
+    <div class="header-top">
+      <a class="header-top__logo" aria-label="Логотип техномарт">
         <img src="img/logo-technomart.svg" width="108" height="18" alt="Техномарт">
       </a>
-      <form class="header-search" method="get" action="https://echo.htmlacademy.ru/" name="search" autocomplete="off" aria-label="форма поиска">
+      <form class="header-top__search" method="get" action="https://echo.htmlacademy.ru/" name="search" autocomplete="off" aria-label="форма поиска">
         <label>
-          <input class="header-search-field" type="search" name="search" placeholder="Поиск:">
+          <input class="header-top__search-field" type="search" name="search" placeholder="Поиск:">
           <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
           </svg>
         </label>
       </form>
-      <div class="header-content-right">
-        <a class="header-btn" href="#nowhere" aria-label="Перейти к закладкам">
+      <div class="header-top__content-right">
+        <a class="header-top__btn" href="#nowhere" aria-label="Перейти к закладкам">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
             <path fill="#ffffff"
                   d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 
                   0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/>
           </svg>
-          <span class="option">Закладки:</span>
+          <span class="header-top__content-right--icons header-top__btn--bookmark">Закладки:</span>
         </a>
-        <a class="header-btn" href="#nowhere" aria-label="Перейти к корзине">
+        <a class="header-top__btn" href="#nowhere" aria-label="Перейти к корзине">
           <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
             <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/>
             <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
             <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
           </svg>
-          <span class="option">Корзина:</span>
+          <span class="header-top__content-right--icons header-top__btn--basket">Корзина:</span>
         </a>
-        <a class="header-btn basket-btn" href="#nowhere" aria-label="Перейти к корзине">
-          <span class="option">Оформить заказ</span>
+        <a class="header-top__btn header-top__btn--green" href="#nowhere" aria-label="Перейти к корзине">
+          <span class="header-top__content-right--icons header-top__btn--order">Оформить заказ</span>
         </a>
       </div>
     </div>
   </div>
 
-  <div class="header-content-middle">
-    <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-    <div class="phone-btn">
-      <a class="phone-number" href="tel:+78125550555" aria-label="Позвонить по тел +7 (812) 555-05-55">
+  <div class="header-middle">
+    <h1 class="header-middle__page-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+    <div class="header-middle__phone-btn">
+      <a class="header-middle__phone-number" href="tel:+78125550555" aria-label="Позвонить по тел +7 (812) 555-05-55">
         <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
           <path fill="#B7BFC8" d="M15.572 18.985h-.941c-4.129-.488-7.157-2.408-9.359-4.864C3.062 11.66 1.318 8.492.978
               4.228V3.084c.078-.774.459-1.304.898-1.757C2.425.766 3.25.044 4.002.019c.554-.018 1.5.38 1.879.899.329.446.504
@@ -60,13 +60,13 @@
         </svg>
         +7 (812) 555-05-55
       </a>
-      <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <p class="header-middle__adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
     </div>
 
-    <div class="header-login">
-      <ul class="enter-login">
+    <div class="header-middle__login">
+      <ul class="header-middle__authorization">
         <li>
-          <a class="login-btn" href="#nowhere" aria-label="Вход на сайт">
+          <a class="header-middle__btn-login" href="#nowhere" aria-label="Вход на сайт">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
               <path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/>
               <path fill="#c5c5c5"
@@ -77,143 +77,143 @@
           </a>
         </li>
         <li>
-          <a class="login-btn" href="#nowhere" aria-label="Зарегистрироваться">Регистрация</a>
+          <a class="header-middle__btn-login" href="#nowhere" aria-label="Зарегистрироваться">Регистрация</a>
         </li>
       </ul>
     </div>
   </div>
 
-  <nav class="header-content-bottom">
-    <ul class="header-navigation">
+  <nav class="header-bottom">
+    <ul class="header-bottom__navigation">
       <li>
-        <a class="nav-btn">Главная</a>
+        <a class="header-bottom__navigation--btn">Главная</a>
       </li>
       <li>
-        <a class="nav-btn" href="#nowhere" aria-label="Перейти к информации о компании">Компания</a>
+        <a class="header-bottom__navigation--btn" href="#nowhere" aria-label="Перейти к информации о компании">Компания</a>
       </li>
       <li>
-        <a class="nav-btn" href="catalog.html" aria-label="Перейти к обзору каталога">Каталог</a>
+        <a class="header-bottom__navigation--btn" href="catalog.html" aria-label="Перейти к обзору каталога">Каталог</a>
       </li>
       <li>
-        <a class="nav-btn" href="#nowhere" aria-label="Перейти к обзору новостей">Новости</a>
+        <a class="header-bottom__navigation--btn" href="#nowhere" aria-label="Перейти к обзору новостей">Новости</a>
       </li>
       <li>
-        <a class="nav-btn" href="#nowhere" aria-label="Перейти к обзору спецпредложений">Спецпредложения</a>
+        <a class="header-bottom__navigation--btn" href="#nowhere" aria-label="Перейти к обзору спецпредложений">Спецпредложения</a>
       </li>
       <li>
-        <a class="nav-btn" href="#nowhere" aria-label="Перейти в раздел доставка">Доставка</a>
+        <a class="header-bottom__navigation--btn" href="#nowhere" aria-label="Перейти в раздел доставка">Доставка</a>
       </li>
       <li>
-        <a class="nav-btn" href="#nowhere" aria-label="Посмотреть контакты">Контакты</a>
+        <a class="header-bottom__navigation--btn" href="#nowhere" aria-label="Посмотреть контакты">Контакты</a>
       </li>
     </ul>
   </nav>
 </header>
 
-<main class="shop-content">
-  <section class="promo-slider">
+<main class="main-blocks">
+  <section class="main-promo-slider">
     <h2 class="visually-hidden">Промо</h2>
-    <div class="promo-card">
-      <div>
-        <h3>Материалы</h3>
-        <a href="#nowhere">На любой вкус</a>
+    <div class="main-promo-slider__card">
+      <div class="main-promo-slider__card--menu">
+        <h3 class="main-promo-slider__title">Материалы</h3>
+        <a class="main-promo-slider__btn" href="#nowhere">На любой вкус</a>
       </div>
-      <div>
-        <img src="img/icon-1.svg" width="44" height="65" alt="Материалы">
-      </div>
-    </div>
-    <div class="promo-card">
-      <div>
-        <h3>Инструмент</h3>
-        <a href="#nowhere">На все случаи</a>
-      </div>
-      <div>
-        <img src="img/icon-2.svg" width="75" height="61" alt="Инструмент">
+      <div class="main-promo-slider__card--icon">
+        <img class="main-promo-slider__image" src="img/icon-1.svg" width="44" height="65" alt="Материалы">
       </div>
     </div>
-    <div class="promo-card">
-      <div>
-        <h3>Техника</h3>
-        <a href="#nowhere">Для стройки</a>
+    <div class="main-promo-slider__card">
+      <div class="main-promo-slider__card--menu">
+        <h3 class="main-promo-slider__title">Инструмент</h3>
+        <a class="main-promo-slider__btn" href="#nowhere">На все случаи</a>
       </div>
-      <div>
-        <img src="img/icon-3.svg" width="78" height="62" alt="Техника">
+      <div class="main-promo-slider__card--icon">
+        <img class="main-promo-slider__image" src="img/icon-2.svg" width="75" height="61" alt="Инструмент">
       </div>
     </div>
-    <div class="promo-card-slider">
-      <div>
-        <h3>Перфораторы</h3>
+    <div class="main-promo-slider__card">
+      <div class="main-promo-slider__card--menu">
+        <h3 class="main-promo-slider__title">Техника</h3>
+        <a class="main-promo-slider__btn" href="#nowhere">Для стройки</a>
+      </div>
+      <div class="main-promo-slider__card--icon">
+        <img class="main-promo-slider__image" src="img/icon-3.svg" width="78" height="62" alt="Техника">
+      </div>
+    </div>
+    <div class="main-promo-slider__card main-promo-slider__card--radio">
+      <div class="main-promo-slider__card--menu">
+        <h3 class="main-promo-slider__title">Перфораторы</h3>
         <p>Настоящие мужские игрушки</p>
       </div>
-      <button type="button" aria-label="Предыдущий">
+      <button class="main-promo-slider__card--radio-icon" type="button" aria-label="Предыдущий">
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40">
           <path fill="#FFF" d="M19.83-.035l2.089 2.099L4.13 19.947l17.847 17.939-2.09 2.099L-.048 19.947z"/>
         </svg>
       </button>
-      <button type="button" aria-label="Следующий">
+      <button class="main-promo-slider__card--radio-icon" type="button" aria-label="Следующий">
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40">
           <path fill="#FFF" d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z"/>
         </svg>
       </button>
-      <a href="#nowhere">Открыть каталог</a>
+      <a class="main-promo-slider__card--radio-btn" href="#nowhere">Открыть каталог</a>
     </div>
-    <div class="promo-card-slider visually-hidden">
-      <div>
-        <h3>Дрели</h3>
+    <div class="main-promo-slider__card main-promo-slider__card--radio visually-hidden">
+      <div class="main-promo-slider__card--menu">
+        <h3 class="main-promo-slider__title">Дрели</h3>
         <p>Соседям на радость</p>
       </div>
-      <button type="button" aria-label="Предыдущий">
+      <button class="main-promo-slider__card--radio-icon" type="button" aria-label="Предыдущий">
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40">
           <path fill="#FFF" d="M19.83-.035l2.089 2.099L4.13 19.947l17.847 17.939-2.09 2.099L-.048 19.947z"/>
         </svg>
       </button>
-      <button type="button" aria-label="Следующий">
+      <button class="main-promo-slider__card--radio-icon" type="button" aria-label="Следующий">
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40">
           <path fill="#FFF" d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z"/>
         </svg>
       </button>
-      <a href="#nowhere">Открыть каталог</a>
+      <a class="main-promo-slider__card--radio-btn red-btn" href="#nowhere">Открыть каталог</a>
     </div>
-    <div class="promo-card">
-      <div>
-        <h3>Скидки 50%</h3>
-        <a href="#nowhere">На 350 товаров</a>
+    <div class="main-promo-slider__card">
+      <div class="main-promo-slider__card--menu">
+        <h3 class="main-promo-slider__title">Скидки 50%</h3>
+        <a class="main-promo-slider__btn" href="#nowhere">На 350 товаров</a>
       </div>
-      <div>
-        <img src="img/icon-4.svg" width="59" height="72" alt="Скидки">
+      <div class="main-promo-slider__card--icon">
+        <img class="main-promo-slider__image" src="img/icon-4.svg" width="59" height="72" alt="Скидки">
       </div>
     </div>
-    <div class="promo-card">
-      <div>
-        <h3>Доставка</h3>
-        <a href="#nowhere">Бесплатно</a>
+    <div class="main-promo-slider__card">
+      <div class="main-promo-slider__card--menu">
+        <h3 class="main-promo-slider__title">Доставка</h3>
+        <a class="main-promo-slider__btn" href="#nowhere">Бесплатно</a>
       </div>
-      <div>
-        <img src="img/icon-5.svg" width="78" height="63" alt="Доставка">
+      <div class="main-promo-slider__card--icon">
+        <img class="main-promo-slider__image" src="img/icon-5.svg" width="78" height="63" alt="Доставка">
       </div>
     </div>
   </section>
 
-  <section class="shop-goods">
-    <div class="head-block">
-      <h2>Популярные товары</h2>
-      <a href="#nowhere">Все популярные товары</a>
+  <section class="main-promo-block">
+    <div class="main-promo-block__head">
+      <h2 class="main-promo-block__title">Популярные товары</h2>
+      <a class="main-promo-block__btn red-btn" href="#nowhere">Все популярные товары</a>
     </div>
-    <ul>
+    <ul class="block-shop">
       <li>
-        <article>
-          <div>
-            <a href="#nowhere">
+        <article class="block-shop__item">
+          <div class="block-shop__item-change">
+            <a class="block-shop__image" href="#nowhere">
               <img src="img/bfg9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
             </a>
-            <div>
+            <div class="block-shop__btn">
               <a href="#nowhere">Купить</a>
               <a href="#nowhere">В закладки</a>
             </div>
           </div>
-          <div>
+          <div class="block-shop__price">
             <a href="#nowhere">
-              <h3>Перфоратор BOSCH BFG 9000</h3>
+              <h3 class="block-shop__price-title">Перфоратор BOSCH BFG 9000</h3>
             </a>
             <del>32500 Р.</del>
             <p>25500 Р.</p>
@@ -221,19 +221,19 @@
         </article>
       </li>
       <li>
-        <article>
-          <div>
-            <a href="#nowhere">
+        <article class="block-shop__item">
+          <div class="block-shop__item-change">
+            <a class="block-shop__image" href="#nowhere">
               <img src="img/bfg3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
             </a>
-            <div>
+            <div class="block-shop__btn">
               <a href="#nowhere">Купить</a>
               <a href="#nowhere">В закладки</a>
             </div>
           </div>
-          <div>          
+          <div class="block-shop__price">          
             <a href="#nowhere">
-              <h3>Перфоратор BOSCH BFG 3000</h3>
+              <h3 class="block-shop__price-title">Перфоратор BOSCH BFG 3000</h3>
             </a>
             <del>22500 Р.</del>
             <p>15500 Р.</p>
@@ -241,19 +241,19 @@
         </article>
       </li>
       <li>
-        <article>
-          <div>
-            <a href="#nowhere">
+        <article class="block-shop__item">
+          <div class="block-shop__item-change">
+            <a class="block-shop__image" href="#nowhere">
               <img src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
             </a>
-            <div>
+            <div class="block-shop__btn">
               <a href="#nowhere">Купить</a>
               <a href="#nowhere">В закладки</a>
             </div>
           </div>        
-          <div>
+          <div class="block-shop__price">
             <a href="#nowhere">
-              <h3>Перфоратор BOSCH BFG 6000</h3>
+              <h3 class="block-shop__price-title">Перфоратор BOSCH BFG 6000</h3>
             </a>
             <del>30500 Р.</del>
             <p>25500 Р.</p>
@@ -261,19 +261,19 @@
         </article>
       </li>
       <li>
-        <article>
-          <div>
-            <a href="#nowhere">
+        <article class="block-shop__item">
+          <div class="block-shop__item-change">
+            <a class="block-shop__image" href="#nowhere">
               <img src="img/bfg2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
             </a>
-            <div>
+            <div class="block-shop__btn">
               <a href="#nowhere">Купить</a>
               <a href="#nowhere">В закладки</a>
             </div>
           </div> 
-          <div>
+          <div class="block-shop__price">
             <a href="#nowhere">
-              <h3>Перфоратор BOSCH BFG 2000</h3>
+              <h3 class="block-shop__price-title">Перфоратор BOSCH BFG 2000</h3>
             </a>
             <p>12500 Р.</p>
           </div>          
@@ -282,81 +282,81 @@
     </ul>
   </section>
 
-  <section class="shop-firms">
-    <div class="head-block">
-      <h2>Популярные производители</h2>
-      <a href="#nowhere">Все производители</a>
+  <section class="main-promo-block">
+    <div class="main-promo-block__head">
+      <h2 class="main-promo-block__title">Популярные производители</h2>
+      <a class="main-promo-block__btn red-btn" href="#nowhere">Все производители</a>
     </div>
-    <ul>
+    <ul class="block-firms">
       <li>
-        <a href="#nowhere">
+        <a class="block-firms__item" href="#nowhere">
           <img src="img/bosch.png" width="126" height="37" alt="официальный сайт производителя BOSCH>">
         </a>
       </li>
       <li>
-        <a href="#nowhere">
+        <a class="block-firms__item" href="#nowhere">
           <img src="img/makita.png" width="123" height="40" alt="официальный сайт производителя makita>">
         </a>
       </li>
       <li>
-        <a href="#nowhere">
+        <a class="block-firms__item" href="#nowhere">
           <img src="img/dewalt.png" width="146" height="44" alt="официальный сайт производителя dEWALT>">
         </a>
       </li>
       <li>
-        <a href="#nowhere">
+        <a class="block-firms__item" href="#nowhere">
           <img src="img/interscol.png" width="146" height="44" alt="официальный сайт производителя интерскол">
         </a>
       </li>
       <li>
-        <a href="#nowhere">
+        <a class="block-firms__item" href="#nowhere">
           <img src="img/hitachi.png" width="169" height="31" alt="официальный сайт производителя hitachi">
         </a>
       </li>
       <li>
-        <a href="#nowhere">
+        <a class="block-firms__item" href="#nowhere">
           <img src="img/lg.png" width="121" height="73" alt="официальный сайт производителя LG">
         </a>
       </li>
       <li>
-        <a href="#nowhere">
+        <a class="block-firms__item" href="#nowhere">
           <img src="img/aeg.png" width="151" height="96" alt="официальный сайт производителя AEG power solutions">
         </a>
       </li>
       <li>
-        <a href="#nowhere">
+        <a class="block-firms__item" href="#nowhere">
           <img src="img/metabo.png" width="204" height="69" alt="официальный сайт производителя metabo">
         </a>
       </li>
     </ul>
   </section> 
   
-  <section class="main-service">
-    <div class="service-info">
+  <section class="main-service-block">
+    <div class="main-service-block__info">
       <h2>Сервисы</h2>
       <p>
         Хороший интернет-магазин отличается от плохого не только ценами!<br>
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
       </p>
     </div>
-    <div class="service-menu">
-      <div >
-        <ul>
+    <div class="main-service-block__menu">
+      <div class="main-service-block__item">
+        <ul class="main-service-block__list">
           <li>
-            <button type="button">Доставка</button>
+            <button class="main-service-block__btn" type="button">Доставка</button>
           </li>
           <li>
-            <button type="button">Гарантия</button>
+            <button class="main-service-block__btn" type="button">Гарантия</button>
           </li>
           <li>
-            <button type="button">Кредит</button>
+            <button class="main-service-block__btn" type="button">Кредит</button>
           </li>
         </ul>
       </div>
-      <div>
-        <ul>
+      <div class="main-service-block__description">
+        <ul class="service-description">
           <li>
-            <div>
+            <div class="service-description__point">
               <h3>Доставка</h3>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
                 заработаем, поднимая его на ваш этаж!
@@ -365,102 +365,101 @@
             <img src="img/delivery.svg" width="468" height="261" alt="Доставка">
           </li>
           <li>
-            <div>
+            <div class="service-description__point visually-hidden">
               <h3>Гарантия</h3>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
                 заработаем, поднимая его на ваш этаж!
               </p>
             </div>
-            <img src="img/guarantee.svg" width="369" height="283" alt="Гарантия">
+            <img class="visually-hidden" src="img/guarantee.svg" width="369" height="283" alt="Гарантия">
           </li>
           <li>
-            <div>
+            <div class="service-description__point visually-hidden">
               <h3>Кредит</h3>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
                 заработаем, поднимая его на ваш этаж!
               </p>
             </div>
-            <img src="img/credit.svg" width="465" height="285" alt="Кредит">
+            <img class="visually-hidden" src="img/credit.svg" width="465" height="285" alt="Кредит">
           </li>
         </ul>
-
       </div>
     </div>
   </section>
 
   <div class="main-company-info">
-    <section class="company-info">
-      <h2 class="title">Компания «Техномарт»</h2>
-      <p class="promo-description">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и <br>
+    <section class="main-company-block">
+      <h2 class="main-company-block__title">Компания «Техномарт»</h2>
+      <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и <br>
         cтроительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-      <p class="promo-description">Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+      <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
         Техномарт работает со многими транспортными компаниями: </p>
-      <ul class="delivery">
+      <ul class="travel-list">
         <li>
-          <a class="delivery-info" href="#nowhere">
+          <a class="travel-list__item" href="#nowhere">
             Деловые линии</a>
         </li>
         <li>
-          <a class="delivery-info" href="#nowhere">Автотрейдинг</a>
+          <a class="travel-list__item" href="#nowhere">Автотрейдинг</a>
         </li>
         <li>
-          <a class="delivery-info" href="#nowhere">ЖелДорЭкспедиция</a>
+          <a class="travel-list__item" href="#nowhere">ЖелДорЭкспедиция</a>
         </li>
       </ul>
-      <a class="info-btn" href="#nowhere">Подробнее о компании</a>
+      <a class="red-btn" href="#nowhere">Подробнее о компании</a>
     </section>
-    <section class="company-location">
-      <h2 class="title">Контакты</h2>
-      <p class="promo-description">Вы можете забрать товар сами, заехав в наш офис:</p>
-      <div>
+    <section class="main-company-block">
+      <h2 class="main-company-block__title">Контакты</h2>
+      <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+      <div class="main-company-block__map">
         <img src="img/map.png" width="300" height="158" alt="Карта">
       </div>
-      <a class="info-btn" href="#nowhere">Заблудились? Напишите нам!</a>
+      <a class="red-btn" href="#nowhere">Заблудились? Напишите нам!</a>
     </section>
   </div>
 
 </main>
 
-<footer class="main-footer">
-  <div class="footer-menu">
-    <a class="footer-logo">
+<footer class="footer-block">
+  <div class="footer-top">
+    <a class="footer-top__logo">
       <img src="img/logo-technomart.svg" width="137" height="22" alt="Техномарт">
     </a>
-    <ul class="footer-nav">
+    <ul class="footer-top__navigation--white">
       <li>
-        <a class="page-nav" href="index.html">Компания</a>
+        <a class="navigation--white__btn" href="index.html">Компания</a>
       </li>
       <li>
-        <a class="page-nav" href="#nowhere">Новости</a>
+        <a class="navigation--white__btn" href="#nowhere">Новости</a>
       </li>
       <li>
-        <a class="page-nav" href="catalog.html">Каталог</a>
+        <a class="navigation--white__btn" href="catalog.html">Каталог</a>
       </li>
       <li>
-        <a class="page-nav" href="#nowhere">Доставка</a>
+        <a class="navigation--white__btn" href="#nowhere">Доставка</a>
       </li>
       <li>
-        <a class="page-nav" href="#nowhere">Контакты</a>
+        <a class="navigation--white__btn" href="#nowhere">Контакты</a>
       </li>
     </ul>
   </div>
-  <div class="footer-catalog">
-    <p class="adress-info">
+  <div class="footer-middle">
+    <p class="footer-middle__adress">
       <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
       <a href="tel:+78125550555">+7 (812) 555-05-55</a>
     </p>
-    <ul class="footer-list">
+    <ul class="footer-middle__navigation--yell">
       <li>
-        <a class="list-nav" href="#nowhere">Материалы</a>
+        <a class="navigation--yell__btn" href="#nowhere">Материалы</a>
       </li>
       <li>
-        <a class="list-nav" href="#nowhere">Техника</a>
+        <a class="navigation--yell__btn" href="#nowhere">Техника</a>
       </li>
       <li>
-        <a class="list-nav" href="#nowhere">Инструмент</a>
+        <a class="navigation--yell__btn" href="#nowhere">Инструмент</a>
       </li>
       <li>
-        <a class="list-nav" href="#nowhere">Спецпредложения</a>
+        <a class="navigation--yell__btn" href="#nowhere">Спецпредложения</a>
       </li>
     </ul>
   </div>
@@ -468,31 +467,31 @@
   <div class="footer-bottom-wrapper">
     <div class="footer-bottom">
       <p>2010–2017 Компания «Техномарт» Все права защищены</p>
-      <ul class="footer-icon">
+      <ul class="footer-bottom__icons-list">
         <li>
-          <a href="#nowhere">
+          <a class="icons-list__btn" href="#nowhere">
             <img src="img/icon-vk.svg" width="26" height="15" alt="Перейти по ссылке Вконтакте">
           </a>
         </li>
         <li>
-          <a href="#nowhere">
+          <a class="icons-list__btn" href="#nowhere">
             <img src="img/icon-fb.svg" width="12" height="22" alt="Перейти по ссылке Фейсбук">
           </a>
         </li>
         <li>
-          <a href="#nowhere">
+          <a class="icons-list__btn" href="#nowhere">
             <img src="img/icon-insta.svg" width="21" height="21" alt="Перейти по ссылке инстаграмм">
           </a>
         </li>
       </ul>
-      <ul class="footer-link">
+      <ul class="footer-bottom__links-list">
         <li>
           <p>Обратная связь:</p>
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <a class="links-list__btn" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
         <li>
           <p>Разработано —</p>
-          <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+          <a class="links-list__btn" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </li>
       </ul>
     </div>
@@ -500,9 +499,9 @@
     
 </footer>
 
-<section class="visually-hidden">
+<section class="modal-map visually-hidden">
   <h2 class="visually-hidden">Полноразмерная карта</h2>
-  <button type="button" aria-label="Закрыть полноразмерную карту">
+  <button class="modal-btn" type="button" aria-label="Закрыть полноразмерную карту">
     <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
       <path
         d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z"
@@ -512,16 +511,16 @@
   <img src="img/map1.jpg" width="943" height="449" alt="Карта">
 </section>
 
-<div class="visually-hidden">
+<div class="modal-feedback visually-hidden">
   <h2 class="visually-hidden">Написать нам</h2>
-  <button type="button" aria-label="Закрыть форму обратной связи">
+  <button class="modal-btn" type="button" aria-label="Закрыть форму обратной связи">
     <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
       <path
         d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z"
         fill="#ee3643"/>
     </svg>
   </button>
-  <div>
+  <div class="modal-feedback-form">
     <form method="post" action="#" name="write-us" autocomplete="off">
       <label>Ваше имя:
         <input type="text" name="user-name" placeholder="Имя Фамилия" required>
@@ -535,27 +534,25 @@
         <textarea name="user-text" placeholder="В свободной форме" required></textarea>
       </label>
       <div>
-        <button type="submit" aria-label="Отправить">Отправить</button>
+        <button class="red-btn" type="submit" aria-label="Отправить">Отправить</button>
       </div>
     </form>
   </div>
 </div>
 
-<section class="visually-hidden">
-  <div>
-    <button type="button" aria-label="Закрыть">
-      <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z"
-          fill="#ee3643"/>
-      </svg>
-    </button>
-    <img src="img/icon-mark.svg" width="66" height="66" alt="Добавить">
-    <h2>Товар добавлен в корзину!</h2>
-  </div>
+<section class="modal-basket visually-hidden">
+  <button class="modal-btn" type="button" aria-label="Закрыть">
+    <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z"
+        fill="#ee3643"/>
+    </svg>
+  </button>
+  <img src="img/icon-mark.svg" width="66" height="66" alt="Добавить">
+  <h2>Товар добавлен в корзину!</h2>
   
   <div>
-    <button type="button">Оформить заказ</button>
+    <a class="red-btn" href="#nowhere">Оформить заказ</a>
     <button type="button">Продолжить покупки</button>
   </div>
 </section>
