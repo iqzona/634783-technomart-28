@@ -10,47 +10,47 @@
 </head>
 <body>
 
-<header class="header-block">
-  <div class="header-top-wrapper">
-    <div class="header-top">
-      <a class="header-top__logo" aria-label="Логотип техномарт">
+<header class="header-page">
+  <div class="header-page__top-wrapper">
+    <div class="header-page__top">
+      <a class="header-page__logo" aria-label="Логотип техномарт">
         <img src="img/logo-technomart.svg" width="108" height="18" alt="Техномарт">
       </a>
-      <form class="header-top__search" method="get" action="https://echo.htmlacademy.ru/" name="search" autocomplete="off" aria-label="форма поиска">
+      <form class="header-page__search" method="get" action="https://echo.htmlacademy.ru/" name="search" autocomplete="off" aria-label="форма поиска">
         <label>
-          <input class="header-top__search-field" type="search" name="search" placeholder="Поиск:">
+          <input class="header-page__search-field" type="search" name="search" placeholder="Поиск:">
           <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
           </svg>
         </label>
       </form>
-      <div class="header-top__content-right">
-        <a class="header-top__btn" href="#nowhere" aria-label="Перейти к закладкам">
+      <div class="header-page__content-right">
+        <a class="header-page__btn-text" href="#nowhere" aria-label="Перейти к закладкам">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
             <path fill="#ffffff"
                   d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 
                   0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/>
           </svg>
-          <span class="header-top__content-right--icons header-top__btn--bookmark">Закладки:</span>
+          <span class="header-page__icon __icon-bookmark">Закладки:0</span>
         </a>
-        <a class="header-top__btn" href="#nowhere" aria-label="Перейти к корзине">
+        <a class="header-page__btn-text" href="#nowhere" aria-label="Перейти к корзине">
           <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
             <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/>
             <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
             <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
           </svg>
-          <span class="header-top__content-right--icons header-top__btn--basket">Корзина:</span>
+          <span class="header-page__icon __icon-basket">Корзина:0</span>
         </a>
-        <a class="header-top__btn header-top__btn--green" href="#nowhere" aria-label="Перейти к корзине">
-          <span class="header-top__content-right--icons header-top__btn--order">Оформить заказ</span>
+        <a class="header-page__btn-text __btn-text-green" href="#nowhere" aria-label="Перейти к корзине">
+          Оформить заказ
         </a>
       </div>
     </div>
   </div>
 
-  <div class="header-middle">
-    <h1 class="header-middle__page-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-    <div class="header-middle__phone-btn">
-      <a class="header-middle__phone-number" href="tel:+78125550555" aria-label="Позвонить по тел +7 (812) 555-05-55">
+  <div class="header-page__middle">
+    <h1 class="header-page__title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+    <div class="header-page__center">
+      <a class="header-page__phone-btn" href="tel:+78125550555" aria-label="Позвонить по тел +7 (812) 555-05-55">
         <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
           <path fill="#B7BFC8" d="M15.572 18.985h-.941c-4.129-.488-7.157-2.408-9.359-4.864C3.062 11.66 1.318 8.492.978
               4.228V3.084c.078-.774.459-1.304.898-1.757C2.425.766 3.25.044 4.002.019c.554-.018 1.5.38 1.879.899.329.446.504
@@ -60,11 +60,11 @@
         </svg>
         +7 (812) 555-05-55
       </a>
-      <p class="header-middle__adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <p class="header-page__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
     </div>
 
-    <div class="header-middle__login">
-      <a class="header-middle__btn-authorization" href="#nowhere">
+    <div class="header-page__enter-group">
+      <a class="enter-group__btn __btn-authorization" href="#nowhere">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
           <path fill="#c5c5c5"  d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415
           1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863
@@ -80,45 +80,45 @@
           </g>
         </svg>
       </a>
-      <ul class="header-middle__menu">
+      <ul class="header-page__menu">
         <li>
-          <a class="header-middle__menu-btn" href="#nowhere" aria-label="Перейти в заказы">Мои заказы</a>
+          <a class="header-page__menu-btn" href="#nowhere" aria-label="Перейти в заказы">Мои заказы</a>
         </li>
         <li>
-          <a class="header-middle__menu-btn" href="#nowhere" aria-label="Перейти в личный кабинет">Личный кабинет</a>
+          <a class="header-page__menu-btn" href="#nowhere" aria-label="Перейти в личный кабинет">Личный кабинет</a>
         </li>
       </ul>
     </div>
   </div>
 
-  <nav class="header-bottom">
-    <ul class="header-bottom__navigation">
-      <li class="header-bottom__navigation-item">
-        <a class="header-bottom__navigation-btn">Главная</a>
+  <nav class="header-page__main-nav">
+    <ul class="main-nav__list">
+      <li class="main-nav__item">
+        <a class="main-nav__link">Главная</a>
       </li>
-      <li class="header-bottom__navigation-item">
-        <a class="header-bottom__navigation-btn" href="#nowhere" aria-label="Перейти к информации о компании">Компания</a>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="#nowhere" aria-label="Перейти к информации о компании">Компания</a>
       </li>
-      <li class="header-bottom__navigation-item">
-        <a class="header-bottom__navigation-btn" href="catalog.html" aria-label="Перейти к обзору каталога">Каталог</a>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="catalog.html" aria-label="Перейти к обзору каталога">Каталог</a>
       </li>
-      <li class="header-bottom__navigation-item">
-        <a class="header-bottom__navigation-btn" href="#nowhere" aria-label="Перейти к обзору новостей">Новости</a>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="#nowhere" aria-label="Перейти к обзору новостей">Новости</a>
       </li>
-      <li class="header-bottom__navigation-item">
-        <a class="header-bottom__navigation-btn" href="#nowhere" aria-label="Перейти к обзору спецпредложений">Спецпредложения</a>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="#nowhere" aria-label="Перейти к обзору спецпредложений">Спецпредложения</a>
       </li>
-      <li class="header-bottom__navigation-item">
-        <a class="header-bottom__navigation-btn" href="#nowhere" aria-label="Перейти в раздел доставка">Доставка</a>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="#nowhere" aria-label="Перейти в раздел доставка">Доставка</a>
       </li>
-      <li class="header-bottom__navigation-item">
-        <a class="header-bottom__navigation-btn" href="#nowhere" aria-label="Посмотреть контакты">Контакты</a>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="#nowhere" aria-label="Посмотреть контакты">Контакты</a>
       </li>
     </ul>
   </nav>
 </header>
 
-<main class="main-block-catalog">
+<main class="main-page">
 
   <ul class="breadcrumbs">
     <li>
@@ -146,11 +146,11 @@
     </li>
   </ul>
 
-  <section class="main-block-page">
-    <h2 class="main-block-page__title">Перфораторы</h2>
-    <aside class="sidebar">
-      <h3 class="sidebar__filter-name">Фильтр:</h3>
-      <form class="sidebar-filter" method="get" action="https://echo.htmlacademy.ru/" name="filter">
+  <section class="catalog-filter">
+    <h2 class="catalog-filter__header">Перфораторы</h2>
+    <aside class="catalog-filter__sidebar">
+      <h3 class="sidebar__name">Фильтр:</h3>
+      <form class="sidebar-form" method="get" action="https://echo.htmlacademy.ru/" name="filter">
         <fieldset class="filter-price">
           <legend>Цена:</legend>
           <div>
@@ -162,7 +162,7 @@
             </div>
           </div>
         </fieldset>
-        <fieldset class="filter-producers">
+        <fieldset class="sidebar-card">
           <legend>Производители:</legend>
           <label>
             <input type="checkbox" name="Bosch">
@@ -185,7 +185,7 @@
             <span>Hitachi</span>
           </label>
         </fieldset>
-        <fieldset class="filter-types">
+        <fieldset class="sidebar-type">
           <legend>Питание:</legend>
           <label>
             <input type="radio" name="radio" value="accumulator">
@@ -199,30 +199,30 @@
         <button type="submit">Показать</button>
       </form>
     </aside>
-    <div class="main-sort-block">
-      <div class="sort-block">
-        <p class="sort-block__filter-name">Сортировка</p>
-        <ul>
+    <div class="catalog-filter__sort-block">
+      <div class="sort-block__menu">
+        <p class="sort-block__title">Сортировка</p>
+        <u class="sort-block__sort-list">
           <li>
-            <a class="sort-block__filter-item" href="#nowhere">по цене</a>
+            <a class="sort-list__item" href="#nowhere">по цене</a>
           </li>
           <li>
-            <a class="sort-block__filter-item" href="#nowhere">по типу</a>
+            <a class="sort-list__item" href="#nowhere">по типу</a>
           </li>
           <li>
-            <a class="sort-block__filter-item" href="#nowhere">по функционалу</a>
+            <a class="sort-list__item" href="#nowhere">по функционалу</a>
           </li>
         </ul>
-        <ul class="sort-block__filter-icons">
+        <ul class="sort-block__icon-list">
           <li>
-            <a class="sort-block__icon-up" href="#nowhere" aria-label="по возрастанию">
+            <a class="icon-list__icon-up" href="#nowhere" aria-label="по возрастанию">
               <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                 <path fill="#231F20" d="M5.5 0L0 10h11z"/>
               </svg>
             </a>
           </li>
           <li>
-            <a href="sort-block__icon-down" aria-label="по убыванию">
+            <a href="icon-list__icon-down" aria-label="по убыванию">
               <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                 <path fill="#231F20" d="M5.5 10L0 0h11"/>
               </svg>
@@ -230,10 +230,10 @@
           </li>
         </ul>
       </div>
-      <ul class="sort-block-catalog">
+      <ul class="catalog__product-list">
         <li>
-          <article class="block-shop__item">
-            <div class="block-shop__item-change">
+          <article class="product-list__product-card">
+            <div class="product-card__active">
               <a class="block-shop__image" href="#nowhere">
                 <img src="img/bfg3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
               </a>
@@ -243,9 +243,9 @@
               </div>
             </div>
             
-            <div>
+            <div class="product-card__price">
               <a href="#nowhere">
-                <h3>Перфоратор BOSCH BFG 3000</h3>
+                <h3 class="product-card__price-title">Перфоратор BOSCH BFG 3000</h3>
               </a>
               <del>22500 Р.</del>
               <p>15500 Р.</p>
@@ -253,20 +253,20 @@
           </article>
         </li>
         <li>
-          <article class="block-shop__item">
-            <div class="block-shop__item-change">
-              <a class="block-shop__image" href="#nowhere">
+          <article class="product-list__product-card">
+            <div class="product-card__active">
+              <a class="product-card__image" href="#nowhere">
                 <img src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               </a>
-              <div class="block-shop__btn">
+              <div class="product-card__btn">
                 <a href="#nowhere">Купить</a>
                 <a href="#nowhere">В закладки</a>
               </div>
             </div>
            
-            <div>
+            <div class="product-card__price">
               <a href="#nowhere">
-                <h3>Перфоратор BOSCH BFG 6000</h3>
+                <h3 class="product-card__price-title">Перфоратор BOSCH BFG 6000</h3>
               </a>
               <del>30500 Р.</del>
               <p>25500 Р.</p>
@@ -274,40 +274,40 @@
           </article>
         </li>
         <li>
-          <article class="block-shop__item">
-            <div class="block-shop__item-change">
-              <a class="block-shop__image" href="#nowhere">
+          <article class="product-list__product-card">
+            <div class="product-card__active">
+              <a class="product-card__image" href="#nowhere">
                 <img src="img/bfg2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
               </a>
-              <div class="block-shop__btn">
+              <div class="product-card__btn">
                 <a href="#nowhere">Купить</a>
                 <a href="#nowhere">В закладки</a>
               </div>
             </div>
             
-            <div>
+            <div class="product-card__price">
               <a href="#nowhere">
-                <h3>Перфоратор BOSCH BFG 2000</h3>
+                <h3 class="product-card__price-title">Перфоратор BOSCH BFG 2000</h3>
               </a>
               <p>12500 Р.</p>
             </div>         
           </article>
         </li>
         <li>
-          <article class="block-shop__item">
-            <div class="block-shop__item-change">
-              <a class="block-shop__image" href="#nowhere">
+          <article class="product-list__product-card">
+            <div class="product-card__active">
+              <a class="product-card__image" href="#nowhere">
                 <img  src="img/bfg3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
               </a>
-              <div class="block-shop__btn">
+              <div class="product-card__btn">
                 <a href="#nowhere">Купить</a>
                 <a href="#nowhere">В закладки</a>
               </div>
             </div>
            
-            <div>
+            <div class="product-card__price">
               <a href="#nowhere">
-                <h3>Перфоратор BOSCH BFG 3000</h3>
+                <h3 class="product-card__price-title">Перфоратор BOSCH BFG 3000</h3>
               </a>
               <del>22500 Р.</del>
               <p>15500 Р.</p>
@@ -315,20 +315,20 @@
           </article>
         </li>
         <li>
-          <article class="block-shop__item">
-            <div class="block-shop__item-change">
-              <a class="block-shop__image" href="#nowhere">
+          <article class="product-list__product-card">
+            <div class="product-card__active">
+              <a class="product-card__image" href="#nowhere">
                 <img src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               </a>
-              <div class="block-shop__btn">
+              <div class="product-card__btn">
                 <a href="#nowhere">Купить</a>
                 <a href="#nowhere">В закладки</a>
               </div>
             </div>
             
-            <div>
+            <div class="product-card__price">
               <a href="#nowhere">
-                <h3>Перфоратор BOSCH BFG 6000</h3>
+                <h3 class="product-card__price-title">Перфоратор BOSCH BFG 6000</h3>
               </a>
               <del>30500 Р.</del>
               <p>25500 Р.</p>
@@ -336,40 +336,40 @@
           </article>
         </li>
         <li>
-          <article class="block-shop__item">
-            <div class="block-shop__item-change">
-              <a class="block-shop__image" href="#nowhere">
+          <article class="product-list__product-card">
+            <div class="product-card__active">
+              <a class="product-card__image" href="#nowhere">
                 <img src="img/bfg2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
               </a>
-              <div class="block-shop__btn">
+              <div class="product-card__btn">
                 <a href="#nowhere">Купить</a>
                 <a href="#nowhere">В закладки</a>
               </div>
             </div>
             
-            <div>
+            <div class="product-card__price">
               <a href="#nowhere">
-                <h3>Перфоратор BOSCH BFG 2000</h3>
+                <h3 class="product-card__price-title">Перфоратор BOSCH BFG 2000</h3>
               </a>
               <p>12500 Р.</p>
             </div>
           </article>
         </li>
         <li>
-          <article class="block-shop__item">
-            <div class="block-shop__item-change">
-              <a class="block-shop__image" href="#nowhere">
+          <article class="product-list__product-card">
+            <div class="product-card__active">
+              <a class="product-card__image" href="#nowhere">
                 <img  src="img/bfg3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
               </a>
-              <div class="block-shop__btn">
+              <div class="product-card__btn">
                 <a href="#nowhere">Купить</a>
                 <a href="#nowhere">В закладки</a>
               </div>
             </div>
             
-            <div>
+            <div class="product-card__price">
               <a href="#nowhere">
-                <h3>Перфоратор BOSCH BFG 3000</h3>
+                <h3 class="product-card__price-title">Перфоратор BOSCH BFG 3000</h3>
               </a>
               <del>22500 Р.</del>
               <p>15500 Р.</p>
@@ -377,20 +377,20 @@
           </article>
         </li>
         <li>
-          <article class="block-shop__item">
-            <div class="block-shop__item-change">
-              <a class="block-shop__image" href="#nowhere">
+          <article class="product-list__product-card">
+            <div class="product-card__active">
+              <a class="product-card__image" href="#nowhere">
                 <img src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
               </a>
-              <div class="block-shop__btn">
+              <div class="product-card__btn">
                 <a href="#nowhere">Купить</a>
                 <a href="#nowhere">В закладки</a>
               </div>
             </div>
             
-            <div>
+            <div class="product-card__price">
               <a href="#nowhere">
-                <h3>Перфоратор BOSCH BFG 6000</h3>
+                <h3 class="product-card__price-title">Перфоратор BOSCH BFG 6000</h3>
               </a>
               <del>30500 Р.</del>
               <p>25500 Р.</p>
@@ -398,20 +398,20 @@
           </article>
         </li>
         <li>
-          <article class="block-shop__item">
-            <div class="block-shop__item-change">
-              <a class="block-shop__image" href="#nowhere">
+          <article class="product-list__product-card">
+            <div class="product-card__active">
+              <a class="product-card__image" href="#nowhere">
                 <img src="img/bfg2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
               </a>
-              <div class="block-shop__btn">
+              <div class="product-card__btn">
                 <a href="#nowhere">Купить</a>
                 <a href="#nowhere">В закладки</a>
               </div>
             </div>
             
-            <div>
+            <div class="product-card__price">
               <a href="#nowhere">
-                <h3>Перфоратор BOSCH BFG 2000</h3>
+                <h3 class="product-card__price-title">Перфоратор BOSCH BFG 2000</h3>
               </a>
               <p>12500 Р.</p>
             </div>         
@@ -435,7 +435,7 @@
     </div>
   </section>
 
-  <section class="block-shop-description">
+  <section class="catalog-description">
       <h2>Пара слов о перфораторах</h2>
       <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
         бетоне и камне.<br>
@@ -446,35 +446,35 @@
   </section>
 </main>
 
-<footer class="footer-block">
-  <div class="footer-top">
-    <a class="footer-top__logo">
+<footer class="footer-page">
+  <div class="footer-page__top">
+    <a class="footer-page__logo">
       <img src="img/logo-technomart.svg" width="137" height="22" alt="Техномарт">
     </a>
-    <ul class="footer-top__navigation--white">
+    <ul class="footer-page__nav--white">
       <li>
-        <a class="navigation-white__btn" href="index.html">Компания</a>
+        <a class="footer-page__nav-btn" href="index.html">Компания</a>
       </li>
       <li>
-        <a class="navigation-white__btn" href="#nowhere">Новости</a>
+        <a class="footer-page__nav-btn"  href="#nowhere">Новости</a>
       </li>
       <li>
-        <a class="navigation-white__btn" href="catalog.html">Каталог</a>
+        <a class="footer-page__nav-btn"  href="catalog.html">Каталог</a>
       </li>
       <li>
-        <a class="navigation-white__btn" href="#nowhere">Доставка</a>
+        <a class="footer-page__nav-btn"  href="#nowhere">Доставка</a>
       </li>
       <li>
-        <a class="navigation-white__btn" href="#nowhere">Контакты</a>
+        <a class="footer-page__nav-btn"  href="#nowhere">Контакты</a>
       </li>
     </ul>
   </div>
-  <div class="footer-middle">
+  <div class="footer-page__middle">
     <p class="footer-middle__adress">
       <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
       <a href="tel:+78125550555">+7 (812) 555-05-55</a>
     </p>
-    <ul class="footer-middle__navigation--yell">
+    <ul class="footer-page__nav--yell">
       <li>
         <a class="navigation-yell__btn" href="#nowhere">Материалы</a>
       </li>
