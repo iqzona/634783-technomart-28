@@ -24,15 +24,15 @@
         </label>
       </form>
       <div class="header-page__content-right">
-        <a class="header-page__btn-text" href="#nowhere" aria-label="Перейти к закладкам">
+        <a class="header-page__btn-text" href="#nowhere">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
             <path fill="#ffffff"
                   d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 
                   0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/>
           </svg>
-          <span class="header-page__icon __icon-bookmark">Закладки: 0</span>
+          <span class="header-page__icon">Закладки: 0</span>
         </a>
-        <a class="header-page__btn-text" href="#nowhere" aria-label="Перейти к корзине">
+        <a class="header-page__btn-text" href="#nowhere">
           <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
             <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/>
             <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
@@ -51,7 +51,7 @@
     <h1 class="header-page__title">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h1>
     
     <div class="header-page__center">
-      <a class="header-page__phone-btn" href="tel:+78125550555" aria-label="Позвонить по тел +7 (812) 555-05-55">
+      <a class="header-page__phone-btn" href="tel:+78125550555">
         <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
           <path fill="#B7BFC8" d="M15.572 18.985h-.941c-4.129-.488-7.157-2.408-9.359-4.864C3.062 11.66 1.318 8.492.978
               4.228V3.084c.078-.774.459-1.304.898-1.757C2.425.766 3.25.044 4.002.019c.554-.018 1.5.38 1.879.899.329.446.504
@@ -67,7 +67,7 @@
     <div class="header-page__enter-group">
       <ul class="enter-group__list">
         <li>
-          <a class="enter-group__btn _btn-enter" href="#nowhere" aria-label="Вход на сайт">
+          <a class="enter-group__btn enter-group__btn-enter" href="#nowhere">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
               <path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/>
               <path fill="#c5c5c5"
@@ -78,7 +78,7 @@
           </a>
         </li>
         <li>
-          <a class="enter-group__btn _btn-reg" href="#nowhere" aria-label="Зарегистрироваться">Регистрация</a>
+          <a class="enter-group__btn enter-group__btn-reg" href="#nowhere">Регистрация</a>
         </li>
       </5ul>
     </div>
@@ -90,90 +90,97 @@
         <a class="main-nav__link">Главная</a>
       </li>
       <li class="main-nav__item">
-        <a class="main-nav__link" href="#nowhere" aria-label="Перейти к информации о компании">Компания</a>
+        <a class="main-nav__link" href="#nowhere">Компания</a>
       </li>
       <li class="main-nav__item">
-        <a class="main-nav__link" href="catalog.html" aria-label="Перейти к обзору каталога">Каталог</a>
+        <a class="main-nav__link" href="catalog.html">Каталог</a>
       </li>
       <li class="main-nav__item">
-        <a class="main-nav__link" href="#nowhere" aria-label="Перейти к обзору новостей">Новости</a>
+        <a class="main-nav__link" href="#nowhere">Новости</a>
       </li>
       <li class="main-nav__item">
-        <a class="main-nav__link" href="#nowhere" aria-label="Перейти к обзору спецпредложений">Спецпредложения</a>
+        <a class="main-nav__link" href="#nowhere">Спецпредложения</a>
       </li>
       <li class="main-nav__item">
-        <a class="main-nav__link" href="#nowhere" aria-label="Перейти в раздел доставка">Доставка</a>
+        <a class="main-nav__link" href="#nowhere">Доставка</a>
       </li>
       <li class="main-nav__item">
-        <a class="main-nav__link" href="#nowhere" aria-label="Посмотреть контакты">Контакты</a>
+        <a class="main-nav__link" href="#nowhere">Контакты</a>
       </li>
     </ul>
   </nav>
 </header>
 
 <main class="main-page">
-  <section class="promo-slider">
+  <section class="main-page__promo-list">
     <h2 class="visually-hidden">Промо</h2>
-    <div class="promo-slider__card">
-      <div class="promo-slider__card-menu">
-        <h3 class="promo-slider__title">Материалы</h3>
-        <a class="promo-slider__btn" href="#nowhere">На любой вкус</a>
+    <div class="promo-card new-item">
+      <div class="promo-card__menu">
+        <h3 class="promo-card__title">Материалы</h3>
+        <a class="promo-card__btn" href="#nowhere">На любой вкус</a>
       </div>
-      <div class="promo-slider__icon-paint">
+      <div class="promo-card__icon-paint">
         <img src="img/icon-1.svg" width="44" height="65" alt="Материалы">
       </div>
     </div>
-    <div class="promo-slider__card">
-      <div class="promo-slider__card-menu">
-        <h3 class="promo-slider__title">Инструмент</h3>
-        <a class="promo-slider__btn" href="#nowhere">На все случаи</a>
+    <div class="promo-card">
+      <div class="promo-card__menu">
+        <h3 class="promo-card__title">Инструмент</h3>
+        <a class="promo-card__btn" href="#nowhere">На все случаи</a>
       </div>
-      <div class="promo-slider__icon-drill">
+      <div class="promo-card__icon-drill">
         <img src="img/icon-2.svg" width="75" height="61" alt="Инструмент">
       </div>
     </div>
-    <div class="promo-slider__card">
-      <div class="promo-slider__card-menu">
-        <h3 class="promo-slider__title">Техника</h3>
-        <a class="promo-slider__btn" href="#nowhere">Для стройки</a>
+    <div class="promo-card">
+      <div class="promo-card__menu">
+        <h3 class="promo-card__title">Техника</h3>
+        <a class="promo-card__btn" href="#nowhere">Для стройки</a>
       </div>
-      <div class="promo-slider__icon-truck">
+      <div class="promo-card__icon-truck">
         <img src="img/icon-3.svg" width="78" height="62" alt="Техника">
       </div>
     </div>
-    <div class="promo-slider__active-card">
-      <div class="active-card">
-        <h3 class="active-card__title">Перфораторы</h3>
-        <p>Настоящие мужские игрушки</p>
+    <div class="promo-slider">
+      <ul class="promo-slider__list">
+        <li class="active-card active-card--puncher">
+          <h3 class="active-card__title">Перфораторы</h3>
+          <p>Настоящие мужские игрушки</p>
+          <a class="promo-slider__btn red-btn" href="#nowhere">Открыть каталог</a>
+        </li>
+        <li class="active-card active-card--drill">
+          <h3 class="active-card__title">Дрели</h3>
+          <p>Соседям на радость</p>
+          <a class="promo-slider__btn red-btn" href="#nowhere">Открыть каталог</a>
+        </li>
+      </ul>
+      <div class="slider-controls">
+        <div class="slider-controls__btn">
+          <button class="active-card__icon-left" type="button" aria-label="Предыдущий"></button>
+          <button class="active-card__icon-right" type="button" aria-label="Следующий"></button>
+        </div>
+        <div class="slider-controls__radio">
+          <button type="button" aria-label="Первый слайд" class="slider-controls__nav slider-controls__active"></button>
+          <button type="button" aria-label="Второй слайд" class="slider-controls__nav"></button> 
+        </div>
       </div>
-      <button class="active-card__icon-left" type="button" aria-label="Предыдущий"></button>
-      <button class="active-card__icon-right" type="button" aria-label="Следующий"></button>
-      <a class="promo-slider__btn red-btn" href="#nowhere">Открыть каталог</a>
     </div>
-    <div class="promo-slider__active-card visually-hidden">
-      <div class="active-card">
-        <h3 class="active-card__title">Дрели</h3>
-        <p>Соседям на радость</p>
+
+    <div class="promo-card">
+      <div class="promo-card__menu">
+        <h3 class="promo-card__title">Скидки 50%</h3>
+        <a class="promo-card__btn" href="#nowhere">На 350 товаров</a>
       </div>
-      <button class="active-card__icon-left" type="button" aria-label="Предыдущий"></button>
-      <button class="active-card__icon-right" type="button" aria-label="Следующий"></button>
-      <a class="promo-slider__btn red-btn" href="#nowhere">Открыть каталог</a>
-    </div>
-    <div class="promo-slider__card">
-      <div class="promo-slider__card-menu">
-        <h3 class="promo-slider__title">Скидки 50%</h3>
-        <a class="promo-slider__btn" href="#nowhere">На 350 товаров</a>
-      </div>
-      <div class="promo-slider__icon-cart">
+      <div class="promo-card__icon-cart">
         <img src="img/icon-4.svg" width="59" height="72" alt="Скидки">
       </div>
     </div>
-    <div class="promo-slider__card">
-      <div class="promo-slider__card-menu">
-        <h3 class="promo-slider__title">Доставка</h3>
-        <a class="promo-slider__btn" href="#nowhere">Бесплатно</a>
+    <div class="promo-card">
+      <div class="promo-card__menu">
+        <h3 class="promo-card__title">Доставка</h3>
+        <a class="promo-card__btn" href="#nowhere">Бесплатно</a>
       </div>
-      <div class="promo-slider__icon-van">
+      <div class="promo-card__icon-van">
         <img src="img/icon-5.svg" width="78" height="63" alt="Доставка">
       </div>
     </div>
@@ -184,15 +191,19 @@
       <h2 class="promo-block__title">Популярные товары</h2>
       <a class="promo-block__btn red-btn" href="#nowhere">Все популярные товары</a>
     </div>
-    <ul class="promo-block__product-list">
+    <ul class="promo-block__list promo-block__product-list">
       <li>
-        <article class="product-list__product-card">
+        <article class="product-list__product-card card-style">
           <div class="product-card__active">
             <a class="product-card__image" href="#nowhere">
               <img src="img/bfg9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
             </a>
             <div class="product-card__btn">
-              <a class="green-btn" href="#nowhere">Купить</a>
+              <a class="green-btn" href="#nowhere">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                  <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
+                  <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>Купить
+              </a>
               <a href="#nowhere">В закладки</a>
             </div>
           </div>
@@ -201,18 +212,22 @@
               <h3 class="product-card__price-title">Перфоратор BOSCH BFG 9000</h3>
             </a>
             <del>32500 Р.</del>
-            <p class="red-btn">25500 Р.</p>
+            <p class="product-card__price-tag red-btn">25500 Р.</p>
           </div>
         </article>
       </li>
       <li>
-        <article class="product-list__product-card">
+        <article class="product-list__product-card card-style">
           <div class="product-card__active">
             <a class="product-card__image" href="#nowhere">
               <img src="img/bfg3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
             </a>
             <div class="product-card__btn">
-              <a class="green-btn" href="#nowhere">Купить</a>
+              <a class="green-btn" href="#nowhere">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                  <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
+                  <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>Купить
+              </a>
               <a href="#nowhere">В закладки</a>
             </div>
           </div>
@@ -221,18 +236,22 @@
               <h3 class="product-card__price-title">Перфоратор BOSCH BFG 3000</h3>
             </a>
             <del>22500 Р.</del>
-            <p class="red-btn">15500 Р.</p>
+            <p class="product-card__price-tag red-btn">15500 Р.</p>
           </div>         
         </article>
       </li>
       <li>
-        <article class="product-list__product-card">
+        <article class="product-list__product-card card-style">
           <div class="product-card__active">
             <a class="product-card__image" href="#nowhere">
               <img src="img/bfg6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
             </a>
             <div class="product-card__btn">
-              <a class="green-btn" href="#nowhere">Купить</a>
+              <a class="green-btn" href="#nowhere">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                  <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
+                  <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>Купить
+              </a>
               <a href="#nowhere">В закладки</a>
             </div>
           </div>        
@@ -241,18 +260,22 @@
               <h3 class="product-card__price-title">Перфоратор BOSCH BFG 6000</h3>
             </a>
             <del>30500 Р.</del>
-            <p class="red-btn">25500 Р.</p>
+            <p class="product-card__price-tag red-btn">25500 Р.</p>
           </div>         
         </article>
       </li>
       <li>
-        <article class="product-list__product-card">
+        <article class="product-list__product-card card-style new-item">
           <div class="product-card__active">
             <a class="product-card__image" href="#nowhere">
               <img src="img/bfg2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
             </a>
             <div class="product-card__btn">
-              <a class="green-btn" href="#nowhere">Купить</a>
+              <a class="green-btn" href="#nowhere">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                  <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
+                  <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>Купить
+              </a>
               <a href="#nowhere">В закладки</a>
             </div>
           </div> 
@@ -260,7 +283,7 @@
             <a href="#nowhere">
               <h3 class="product-card__price-title">Перфоратор BOSCH BFG 2000</h3>
             </a>
-            <p class="red-btn">12500 Р.</p>
+            <p class="product-card__price-tag red-btn">12500 Р.</p>
           </div>          
         </article>
       </li>
@@ -272,105 +295,107 @@
       <h2 class="promo-block__title">Популярные производители</h2>
       <a class="promo-block__btn red-btn" href="#nowhere">Все производители</a>
     </div>
-    <ul class="promo-block_company-list">
-      <li>
-        <a class="company-list__company-card" href="#nowhere">
+    <ul class="promo-block__list promo-block__company-list">
+      <li class="card-style company-list__company-card">
+        <a class="company-list__card" href="#nowhere">
           <img src="img/bosch.png" width="126" height="37" alt="официальный сайт производителя BOSCH>">
         </a>
       </li>
-      <li>
-        <a class="company-list__company-card"  href="#nowhere">
+      <li class="card-style company-list__company-card">
+        <a class="company-list__card" href="#nowhere">
           <img src="img/makita.png" width="123" height="40" alt="официальный сайт производителя makita>">
         </a>
       </li>
-      <li>
-        <a class="company-list__company-card" href="#nowhere">
+      <li class="card-style company-list__company-card">
+        <a class="company-list__card" href="#nowhere">
           <img src="img/dewalt.png" width="146" height="44" alt="официальный сайт производителя dEWALT>">
         </a>
       </li>
-      <li>
-        <a class="company-list__company-card" href="#nowhere">
+      <li class="card-style company-list__company-card">
+        <a class="company-list__card" href="#nowhere">
           <img src="img/interscol.png" width="146" height="44" alt="официальный сайт производителя интерскол">
         </a>
       </li>
-      <li>
-        <a class="company-list__company-card" href="#nowhere">
+      <li class="card-style company-list__company-card">
+        <a class="company-list__card" href="#nowhere">
           <img src="img/hitachi.png" width="169" height="31" alt="официальный сайт производителя hitachi">
         </a>
       </li>
-      <li>
-        <a class="company-list__company-card" href="#nowhere">
+      <li class="card-style company-list__company-card">
+        <a class="company-list__card" href="#nowhere">
           <img src="img/lg.png" width="121" height="73" alt="официальный сайт производителя LG">
         </a>
       </li>
-      <li>
-        <a class="company-list__company-card" href="#nowhere">
+      <li class="card-style company-list__company-card">
+        <a class="company-list__card" href="#nowhere">
           <img src="img/aeg.png" width="151" height="96" alt="официальный сайт производителя AEG power solutions">
         </a>
       </li>
-      <li>
-        <a class="company-list__company-card" href="#nowhere">
+      <li class="card-style company-list__company-card">
+        <a class="company-list__card" href="#nowhere">
           <img src="img/metabo.png" width="204" height="69" alt="официальный сайт производителя metabo">
         </a>
       </li>
     </ul>
   </section> 
   
-  <section class="service-block">
-    <div class="service-block__info">
-      <h2>Сервисы</h2>
-      <p>
-        Хороший интернет-магазин отличается от плохого не только ценами!<br>
-        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-      </p>
-    </div>
-    <div class="service-block__service-slider">
-      <div class="service-slider__item">
-        <ul class="service-slider__list">
-          <li>
-            <button class="service-slider__btn" type="button">Доставка</button>
-          </li>
-          <li>
-            <button class="service-slider__btn" type="button">Гарантия</button>
-          </li>
-          <li>
-            <button class="service-slider__btn" type="button">Кредит</button>
-          </li>
-        </ul>
+  <div class="service-block-wrapper">
+    <section class="service-block">
+      <div class="service-block__info">
+        <h2>Сервисы</h2>
+        <p>
+          Хороший интернет-магазин отличается от плохого не только ценами!<br>
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+        </p>
       </div>
-      <div class="service-slider__description">
-        <ul class="slider-description">
-          <li>
-            <div class="slider-description__item">
-              <h3>Доставка</h3>
-              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-                заработаем, поднимая его на ваш этаж!
-              </p>
-            </div>
-            <img src="img/delivery.svg" width="468" height="261" alt="Доставка">
-          </li>
-          <li>
-            <div class="slider-description__item visually-hidden">
-              <h3>Гарантия</h3>
-              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-                заработаем, поднимая его на ваш этаж!
-              </p>
-            </div>
-            <img class="visually-hidden" src="img/guarantee.svg" width="369" height="283" alt="Гарантия">
-          </li>
-          <li>
-            <div class="slider-description__item visually-hidden">
-              <h3>Кредит</h3>
-              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-                заработаем, поднимая его на ваш этаж!
-              </p>
-            </div>
-            <img class="visually-hidden" src="img/credit.svg" width="465" height="285" alt="Кредит">
-          </li>
-        </ul>
+      <div class="service-block__service-slider">
+        <div class="service-slider__item">
+          <ul class="service-slider__list">
+            <li>
+              <button class="service-slider__btn" type="button">Доставка</button>
+            </li>
+            <li>
+              <button class="service-slider__btn" type="button">Гарантия</button>
+            </li>
+            <li>
+              <button class="service-slider__btn" type="button">Кредит</button>
+            </li>
+          </ul>
+        </div>
+        <div class="service-slider__description">
+          <ul class="slider-description">
+            <li>
+              <div class="slider-description__item">
+                <h3>Доставка</h3>
+                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+                  заработаем, поднимая его на ваш этаж!
+                </p>
+              </div>
+              <img src="img/delivery.svg" width="468" height="261" alt="Доставка">
+            </li>
+            <li>
+              <div class="slider-description__item visually-hidden">
+                <h3>Гарантия</h3>
+                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+                  заработаем, поднимая его на ваш этаж!
+                </p>
+              </div>
+              <img class="visually-hidden" src="img/guarantee.svg" width="369" height="283" alt="Гарантия">
+            </li>
+            <li>
+              <div class="slider-description__item visually-hidden">
+                <h3>Кредит</h3>
+                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+                  заработаем, поднимая его на ваш этаж!
+                </p>
+              </div>
+              <img class="visually-hidden" src="img/credit.svg" width="465" height="285" alt="Кредит">
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
   <div class="company-info">
     <section class="company-block">
@@ -381,8 +406,7 @@
         Техномарт работает со многими транспортными компаниями: </p>
       <ul class="travel-list">
         <li>
-          <a class="travel-list__item" href="#nowhere">
-            Деловые линии</a>
+          <a class="travel-list__item" href="#nowhere">Деловые линии</a>
         </li>
         <li>
           <a class="travel-list__item" href="#nowhere">Автотрейдинг</a>
@@ -410,49 +434,49 @@
     <a class="footer-page__logo">
       <img src="img/logo-technomart.svg" width="137" height="22" alt="Техномарт">
     </a>
-    <ul class="footer-page__nav--white">
+    <ul class="footer-page__nav footer-page__nav--white">
       <li>
-        <a class="footer-page__nav-btn" href="index.html">Компания</a>
+        <a class="footer-page__nav-btn--white" href="index.html">Компания</a>
       </li>
       <li>
-        <a class="footer-page__nav-btn"  href="#nowhere">Новости</a>
+        <a class="footer-page__nav-btn--white"  href="#nowhere">Новости</a>
       </li>
       <li>
-        <a class="footer-page__nav-btn"  href="catalog.html">Каталог</a>
+        <a class="footer-page__nav-btn--white"  href="catalog.html">Каталог</a>
       </li>
       <li>
-        <a class="footer-page__nav-btn"  href="#nowhere">Доставка</a>
+        <a class="footer-page__nav-btn--white"  href="#nowhere">Доставка</a>
       </li>
       <li>
-        <a class="footer-page__nav-btn"  href="#nowhere">Контакты</a>
+        <a class="footer-page__nav-btn--white"  href="#nowhere">Контакты</a>
       </li>
     </ul>
   </div>
   <div class="footer-page__middle">
-    <p class="footer-middle__adress">
+    <p class="footer-page__adress">
       <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
       <a href="tel:+78125550555">+7 (812) 555-05-55</a>
     </p>
-    <ul class="footer-page__nav--yell">
+    <ul class="footer-page__nav footer-page__nav--yell">
       <li>
-        <a class="footer-page__nav-btn" href="#nowhere">Материалы</a>
+        <a class="footer-page__nav-btn--yell" href="#nowhere">Материалы</a>
       </li>
       <li>
-        <a class="footer-page__nav-btn" href="#nowhere">Техника</a>
+        <a class="footer-page__nav-btn--yell" href="#nowhere">Техника</a>
       </li>
       <li>
-        <a class="footer-page__nav-btn" href="#nowhere">Инструмент</a>
+        <a class="footer-page__nav-btn--yell" href="#nowhere">Инструмент</a>
       </li>
       <li>
-        <a class="footer-page__nav-btn" href="#nowhere">Спецпредложения</a>
+        <a class="footer-page__nav-btn--yell" href="#nowhere">Спецпредложения</a>
       </li>
     </ul>
   </div>
   
-  <div class="footer-bottom-wrapper">
-    <div class="footer-bottom">
+  <div class="footer-page__wrapper">
+    <div class="footer-page__bottom">
       <p>2010–2017 Компания «Техномарт» Все права защищены</p>
-      <ul class="footer-bottom__icons-list">
+      <ul class="footer-page__icons-list">
         <li>
           <a class="icons-list__btn" href="#nowhere">
             <img src="img/icon-vk.svg" width="26" height="15" alt="Перейти по ссылке Вконтакте">
@@ -469,7 +493,7 @@
           </a>
         </li>
       </ul>
-      <ul class="footer-bottom__links-list">
+      <ul class="footer-page__links-list">
         <li>
           <p>Обратная связь:</p>
           <a class="links-list__btn" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
@@ -519,7 +543,7 @@
         <textarea name="user-text" placeholder="В свободной форме" required></textarea>
       </label>
       <div>
-        <button class="red-btn" type="submit" aria-label="Отправить">Отправить</button>
+        <button class="red-btn" type="submit">Отправить</button>
       </div>
     </form>
   </div>
