@@ -16,10 +16,10 @@ if (map) {
     mapPopup.classList.remove('modal-show');
   });
 
-  window.addEventListener("keydown", function (event) {
-    if (event.keyCode === 27 && mapPopup.classList.contains("modal-show")) {
+  window.addEventListener('keydown', function (event) {
+    if (event.keyCode === 27 && mapPopup.classList.contains('modal-show')) {
       event.preventDefault();
-      mapPopup.classList.remove("modal-show");
+      mapPopup.classList.remove('modal-show');
     }
   });
 }
@@ -36,8 +36,10 @@ if (promoSlides && prevSlide && nextSlide && promoRadioButtons) {
     promoSlides.forEach(function(slide, index) {
       if (index === slideIndex) {
         slide.classList.add('active-card__show');
+        promoRadioButtons[index].classList.add('slider-controls__active');
       } else {
         slide.classList.remove('active-card__show');
+        promoRadioButtons[index].classList.remove('slider-controls__active');
       }
     });
   };
@@ -113,10 +115,10 @@ if (basketPopup) {
     basketPopup.classList.remove('modal-show');
   });
 
-  window.addEventListener("keydown", function (event) {
-    if (event.keyCode === 27 && basketPopup.classList.contains("modal-show")) {
+  window.addEventListener('keydown', function (event) {
+    if (event.keyCode === 27 && basketPopup.classList.contains('modal-show')) {
       event.preventDefault();
-      basketPopup.classList.remove("modal-show");
+      basketPopup.classList.remove('modal-show');
     }
   });
 }
@@ -177,18 +179,18 @@ if (feedback && feedbackPopup) {
     feedbackPopup.classList.remove('modal-error');
   });
 
-  window.addEventListener("keydown", function (event) {
-    if (event.keyCode === 27 && feedbackPopup.classList.contains("modal-show")) {
+  window.addEventListener('keydown', function (event) {
+    if (event.keyCode === 27 && feedbackPopup.classList.contains('modal-show')) {
       event.preventDefault();
-      feedbackPopup.classList.remove("modal-show");
+      feedbackPopup.classList.remove('modal-show');
       feedbackPopup.classList.remove('modal-error');
     }
   });
 
-  feedbackFrom.addEventListener("submit", function (event) {
+  feedbackFrom.addEventListener('submit', function (event) {
     if (!feedbackName.value || !feedbackEmail.value || !feedbackText.value) {
       event.preventDefault();
-      feedbackPopup.classList.add("modal-error");
+      feedbackPopup.classList.add('modal-error');
       feedbackPopup.style.animation = 'none';
       feedbackPopup.offsetHeight;
       feedbackPopup.style.animation = null; 

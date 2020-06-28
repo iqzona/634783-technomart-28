@@ -6,7 +6,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
   <body>
 
@@ -19,7 +19,8 @@
           <form class="header-page__search" method="get" action="https://echo.htmlacademy.ru/" name="search" autocomplete="off" aria-label="форма поиска">
             <label>
               <input class="header-page__search-field" type="search" name="search" placeholder="Поиск:">
-              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="context-fill" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                <path fill="context-fill" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
               </svg>
             </label>
           </form>
@@ -65,7 +66,7 @@
 
         <div class="header-page__enter-group">
           <div class="enter-group__buttons">
-            <a class="enter-group__btn enter-group__btn-authorization" href="#nowhere">
+            <a class="enter-group__btn enter-group__btn-authorization" href="#nowhere" aria-label="Войти в профайл">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
                 <path fill="currentFill"  d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415
                 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863
@@ -73,7 +74,7 @@
               </svg>
               Равшан Джамшутович
             </a>
-            <a class="enter-group__btn-exit" href="#nowhere" aria-label="">
+            <a class="enter-group__btn-exit" href="#nowhere" aria-label="Выйти из профайла">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17">
                 <g fill="currentFill">
                   <path fill="currentFill" d="M21 8.5L12.125 0v6h-6v5h6v6z"/>
@@ -126,7 +127,7 @@
 
       <ul class="breadcrumbs">
         <li>
-          <a class="breadcrumbs__item" href="index.html">
+          <a class="breadcrumbs__item" href="index.html" aria-label="Перейти на главную страницу">
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12">
               <g fill="#C1C6CE">
                 <path d="M3 8v4h4V8h2v4h4V8L8 3.516z"/>
@@ -154,68 +155,68 @@
         <h2 class="catalog-filter__header">Перфораторы</h2>
 
         <aside class="catalog-filter__sidebar">
-        <h3 class="sidebar__name">Фильтр:</h3>
-        <form class="sidebar-form" method="get" action="https://echo.htmlacademy.ru/" name="filter" autocomplete="off">
+          <h3 class="sidebar__name">Фильтр:</h3>
+          <form class="sidebar-form" method="get" action="https://echo.htmlacademy.ru/" name="filter" autocomplete="off">
 
-          <fieldset class="filter-price filter-fieldset">
-            <legend>Цена:</legend>
-            <div class="range-filter">
-              <div class="range-controls">
-                <div class="scale">
-                  <div class="bar" style="width: 80%; margin-left: 0%"></div>
+            <fieldset class="filter-price filter-fieldset">
+              <legend>Цена:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="width: 80%; margin-left: 0%"></div>
+                  </div>
+                  <button class="toggle toggle-min" type="button" tabindex="0" aria-label="Ползунок слева минимальное значение"></button>
+                  <button class="toggle toggle-max" type="button" tabindex="0" aria-label="Ползунок справа максимальное значение"></button>
                 </div>
-                <div class="toggle toggle-min" tabindex="0"></div>
-                <div class="toggle toggle-max" tabindex="0"></div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    <input type="number" name="min-price" value="0">
+                  </label>
+                  <span>-</span>
+                  <label class="max-price">
+                    <input type="number" name="max-price" value="30000">
+                  </label>
+                </div>
               </div>
-              <div class="price-controls">
-                <label class="min-price">
-                  <input type="number" name="min-price" value="0">
-                </label>
-                <span>-</span>
-                <label class="max-price">
-                  <input type="number" name="max-price" value="30000">
-                </label>
-              </div>
-            </div>
-          </fieldset>
+            </fieldset>
 
-          <fieldset class="firm-fieldset filter-fieldset">
-            <legend>Производители:</legend>
-            <label>
-              <input class="firm-fieldset__check" type="checkbox" name="Bosch">
-              <span class="firm-fieldset__var">Bosch</span>
-            </label>
-            <label>
-              <input class="firm-fieldset__check" type="checkbox" name="Интерскол">
-              <span class="firm-fieldset__var">Интерскол</span>
-            </label>
-            <label>
-              <input class="firm-fieldset__check" type="checkbox" name="Makita">
-              <span class="firm-fieldset__var">Makita</span>
-            </label>
-            <label>
-              <input class="firm-fieldset__check" type="checkbox" name="DeWalt">
-              <span class="firm-fieldset__var">DeWalt</span>
-            </label>
-            <label>
-              <input class="firm-fieldset__check" type="checkbox" name="Hitachi">
-              <span class="firm-fieldset__var">Hitachi</span>
-            </label>
-          </fieldset>
+            <fieldset class="firm-fieldset filter-fieldset">
+              <legend>Производители:</legend>
+              <label tabindex="0">
+                <input class="firm-fieldset__check" type="checkbox" name="Bosch">
+                <span class="firm-fieldset__var">Bosch</span>
+              </label>
+              <label tabindex="0">
+                <input class="firm-fieldset__check" type="checkbox" name="Интерскол">
+                <span class="firm-fieldset__var">Интерскол</span>
+              </label>
+              <label tabindex="0">
+                <input class="firm-fieldset__check" type="checkbox" name="Makita">
+                <span class="firm-fieldset__var">Makita</span>
+              </label>
+              <label tabindex="0">
+                <input class="firm-fieldset__check" type="checkbox" name="DeWalt">
+                <span class="firm-fieldset__var">DeWalt</span>
+              </label>
+              <label tabindex="0">
+                <input class="firm-fieldset__check" type="checkbox" name="Hitachi">
+                <span class="firm-fieldset__var">Hitachi</span>
+              </label>
+            </fieldset>
 
-          <fieldset class="type-fieldset filter-fieldset">
-            <legend>Питание:</legend>
-            <label>
-              <input class="type-fieldset__check" type="radio" name="radio" value="accumulator">
-              <span class="type-fieldset__var">Аккумуляторные</span>
-            </label>
-            <label>
-              <input class="type-fieldset__check" type="radio" name="radio" value="network">
-              <span class="type-fieldset__var">Сетевые</span>
-            </label>
-          </fieldset>
-          <button class="sidebar-form__btn" type="submit">Показать</button>
-        </form>
+            <fieldset class="type-fieldset filter-fieldset">
+              <legend>Питание:</legend>
+              <label tabindex="0">
+                <input class="type-fieldset__check" type="radio" name="radio" value="accumulator">
+                <span class="type-fieldset__var">Аккумуляторные</span>
+              </label>
+              <label tabindex="0">
+                <input class="type-fieldset__check" type="radio" name="radio" value="network">
+                <span class="type-fieldset__var">Сетевые</span>
+              </label>
+            </fieldset>
+            <button class="sidebar-form__btn" type="submit">Показать</button>
+          </form>
         </aside>
 
         <div class="catalog-filter__sort-block">
@@ -269,7 +270,7 @@
                   <a href="#nowhere">
                     <h3 class="product-card__price-title">Перфоратор BOSCH BFG 3000</h3>
                   </a>
-                  <del>22500 Р.</del>
+                  <del class="promo-card__price-del">22500 Р.</del>
                   <p class="product-card__price-tag red-btn">15500 Р.</p>
                 </div>         
               </article>
@@ -293,7 +294,7 @@
                   <a href="#nowhere">
                     <h3 class="product-card__price-title">Перфоратор BOSCH BFG 6000</h3>
                   </a>
-                  <del>30500 Р.</del>
+                  <del class="promo-card__price-del">30500 Р.</del>
                   <p class="product-card__price-tag red-btn">25500 Р.</p>
                 </div>         
               </article>
@@ -340,7 +341,7 @@
                   <a href="#nowhere">
                     <h3 class="product-card__price-title">Перфоратор BOSCH BFG 3000</h3>
                   </a>
-                  <del>22500 Р.</del>
+                  <del class="promo-card__price-del">22500 Р.</del>
                   <p class="product-card__price-tag red-btn">15500 Р.</p>
                 </div>         
               </article>
@@ -364,7 +365,7 @@
                   <a href="#nowhere">
                     <h3 class="product-card__price-title">Перфоратор BOSCH BFG 6000</h3>
                   </a>
-                  <del>30500 Р.</del>
+                  <del class="promo-card__price-del">30500 Р.</del>
                   <p class="product-card__price-tag red-btn">25500 Р.</p>
                 </div>         
               </article>
@@ -411,7 +412,7 @@
                   <a href="#nowhere">
                     <h3 class="product-card__price-title">Перфоратор BOSCH BFG 3000</h3>
                   </a>
-                  <del>22500 Р.</del>
+                  <del class="promo-card__price-del">22500 Р.</del>
                   <p class="product-card__price-tag red-btn">15500 Р.</p>
                 </div>         
               </article>
@@ -435,7 +436,7 @@
                   <a href="#nowhere">
                     <h3 class="product-card__price-title">Перфоратор BOSCH BFG 6000</h3>
                   </a>
-                  <del>30500 Р.</del>
+                  <del class="promo-card__price-del">30500 Р.</del>
                   <p class="product-card__price-tag red-btn">25500 Р.</p>
                 </div>         
               </article>
@@ -520,7 +521,7 @@
       </div>
       <div class="footer-page__middle">
         <p class="footer-page__address">
-          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br />
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           <a href="tel:+78125550555">+7 (812) 555-05-55</a>
         </p>
         <ul class="footer-page__nav footer-page__nav--yell">
@@ -595,6 +596,7 @@
       </div>
     </section>
 
-    <script src="js/script.min.js"></script>
+    <script src="js/script.min.js">
+    </script>
   </body>
 </html>
